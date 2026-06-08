@@ -2,7 +2,7 @@ import axios from "axios";
 import { BASE_URL } from "./apiPaths";
 
 const axiosInstance = axios.create({
-  baseURL: "http://localhost:8000",
+  baseURL: "https://agileaiinvoicesbackend.onrender.com",
   timeout: 80000,
   headers: {
     "Content-Type": "application/json",
