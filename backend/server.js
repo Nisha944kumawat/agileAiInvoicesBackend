@@ -21,7 +21,13 @@ app.use(
 
 // Connect Database
 connectDB();
-
+// Health Check Route
+app.get("/", (req, res) => {
+  res.status(200).json({
+    success: true,
+    message: "Agile AI Invoices Backend is Live 🚀",
+  });
+});
 // Middleware
 app.use(express.json());
 
